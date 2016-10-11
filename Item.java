@@ -1,5 +1,7 @@
 package resterauntReservationApp;
 
+import resterauntReservationApp.Item.Category;
+
 public class Item {
 	public enum Category {mainCourse, drink, dessert};
 	
@@ -9,10 +11,10 @@ public class Item {
 	private String itemDescription;
 	
 
-	public Item(String name, double price, Category category){
+	public Item(String name, double price, int categoryValue){
 		itemName = name;
 		itemPrice = price;
-		itemCategory = category;
+		setItemCategory(categoryValue);
 		itemDescription = "This is a " + itemCategory.toString();
 	}
 	
@@ -42,8 +44,16 @@ public class Item {
 		itemPrice = price;
 	}
 	
-	public void setItemCategory(Category category){
-		itemCategory = category;
+	public void setItemCategory(int categoryValue){
+		switch (categoryValue){
+		case 1:
+			itemCategory = Category.mainCourse; break;
+		case 2:
+			itemCategory = Category.drink; break;
+		case 3:
+			itemCategory = Category.dessert; break;
+		default: System.out.println("ERROR");
+		}
 	}
 	
 	public void setItemDescription(String description){
