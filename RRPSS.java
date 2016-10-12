@@ -4,8 +4,10 @@ import java.util.*;
 
 public class RRPSS {
 
-	private static Menu menu = new Menu();
+	private static Menu menu = new Menu("/Users/shiganyu/Documents/Eclipse/workspace/cz2002.groupProject/src/resterauntReservationApp/menuDB.csv");
+	
 	public static void main(String[] args) {
+		menu.printMenu();
 		Scanner sc = new Scanner (System.in);
 		int choice;
 		do {
