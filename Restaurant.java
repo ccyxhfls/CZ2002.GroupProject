@@ -29,19 +29,16 @@ public class Restaurant {
 		switch (choice){
 		case 1: //name
 			foodMgr.updateName(ID, value);
+			break;
 		case 2:
 			foodMgr.updatePrice(ID, Double.parseDouble(value));
+			break;
 		case 3:
 			foodMgr.updateDescription(ID, value);
-			
+			break;
 		}
-		
 	}
 	
-	public PromoSet addPromoSet(int ID){
-		PromoSet promoSet = new PromoSet(ID);
-		return promoSet;
-	}
 	
 	public void addPromoSet(int ID, String name, String foodListStr, double price, String description) {
 		ArrayList<Food> foodList = getFoodListFromID(foodListStr);
