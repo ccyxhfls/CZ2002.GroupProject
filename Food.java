@@ -1,7 +1,9 @@
 package restaurantReservationApp;
 
-public class Food {
-	public static enum Category{
+
+
+public class Food extends MenuItem{
+	public static enum KindOfFood{
 		ADVANCEDORDER,
 		APPETIZER,
 		SOUP,
@@ -18,62 +20,34 @@ public class Food {
 		BEER
 	};
 	
-	private int foodID;
-	private String foodName;
-	private double foodPrice;
-	private Category foodCategory;
+	private KindOfFood category;
 	
-	public Food (String[] metaData){
-		foodID = Integer.parseInt(metaData[0]);
-		foodCategory = Category.valueOf(metaData[1]);
-		foodName = metaData[2];
-		foodPrice = Double.parseDouble(metaData[3]);
+	
+	public Food (String[] attributes){
+		ID = Integer.parseInt(attributes[0]);
+		category = KindOfFood.valueOf(attributes[1]);
+		name = attributes[2];
+		price = Double.parseDouble(attributes[3]);
+	}
+
+	public Food(int ID, String name, double price, int category) {
+		this.ID = ID;
+		this.name = name;
+		this.price = price;
+		this.category = KindOfFood.values()[category-1];
+	}
+
+	public KindOfFood getCategory(){
+		return category;
 	}
 	
-	public Food (int ID, String name, double price, Category cat){
-		setFoodID(ID);
-		setFoodName(name);
-		setFoodPrice(price);
-		setFoodCategory(cat);
-	}
-	
-	public int getFoodID(){
-		return foodID;
-	}
-	
-	public String getFoodName(){
-		return foodName;
-	}
-	
-	public double getFoodPrice(){
-		return foodPrice;
-	}
-	
-	public Category getFoodCategory(){
-		return foodCategory;
-	}
-	
-	public void setFoodCategory(Category cat){
-		foodCategory = cat;
-	}
-	
-	public void setFoodID(int id){
-		foodID= id;
-	}
-	
-	public void setFoodName(String name){
-		foodName = name;
-	}
-	
-	
-	public void setFoodPrice(double price){
-		foodPrice = price;
-	}
 	
 	public String toString(){
 		
 		String format = "%1$-5d %2$-20s %3$-50s %4$-10.2f";
-		String output = String.format(format, this.foodID, this.foodCategory, this.foodName, this.foodPrice);
+		String output = String.format(format, this.ID, this.category, this.name, this.price);
 		return output;
 	}
+
+	
 }
