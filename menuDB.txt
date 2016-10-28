@@ -1,0 +1,77 @@
+101,ADVANCEDORDER,Lobster Cooked In Two Styles,50,0,0,0
+102,ADVANCEDORDER,Red Garoupa,68,0,0,0
+103,ADVANCEDORDER,Soon Hock Fish,38,0,0,0
+104,ADVANCEDORDER,Steamed Half Shell Scallop with Garlic,48,0,0,0
+105,ADVANCEDORDER,Crab,40,0,0,0
+201,APPETIZER,Marinated Jelly Fish with Lettuce,8,0,0,0
+202,APPETIZER,Braised Bran Dough with Black Mushroom,8,1,0,0
+203,APPETIZER,Smoked Fish Fillet in Shanghai Style,10,0,0,0
+204,APPETIZER,Sze Chuan Spicy Cold Chicken,10,0,0,1
+205,APPETIZER,Marinated Black Fungus with Sesame Oil,6,1,0,1
+206,APPETIZER,Japanese Radish with Special Sauce,6,1,0,1
+301,SOUP,Double Boiled Black Chicken with ""Huai Shan"" ",8.8,0,0,0
+302,SOUP,Double Boiled Ribs Soup with ""Huai Shan"" ",8.8,0,0,0
+303,SOUP,Fish Head Soup with ToFu,28,0,1,0
+304,SOUP,Yellow Seabass Soup with Preserved Vegetable,18,0,0,0
+305,SOUP,Pumpkin Soup with Fresh Mushroom,12,0,0,0
+306,SOUP,Fresh Mushroom Soup ,12,1,0,0
+401,FISH,Deep Fried SeaBass in Sweet & Sour Sauce,38,0,1,0
+402,FISH,Steamed Fish Head with Minced Chilli ,28,0,1,1
+403,FISH,Steamed Cod Fish with Preserved Vegetable,28,0,1,0
+404,FISH,Braised Fish Fillet with Spicy Chilli Oil,18,0,0,1
+501,FRESHPRAWN,Signature Fried Prawn with Chef's Sauce,36,0,1,0
+502,FRESHPRAWN,Fried Prawn In Buttered Sauce,26,0,1,0
+503,FRESHPRAWN,Prawn with Salted Egg Yolk,16,0,1,0
+504,FRESHPRAWN,Cereal Prawn,16,0,0,0
+601,CLASSICZICHAR,Signature Meat Ball with Egg Yolk (per pc),8.8,0,0,0
+602,CLASSICZICHAR,Grandma Braised Pork,18,0,1,0
+603,CLASSICZICHAR,Pig Trotter,26,0,1,0
+604,CLASSICZICHAR,Deep Fried Ribs with Fragrant Garlic,18,0,0,0
+605,CLASSICZICHAR,Roasted Pork Ribs with Sweet Vineger,18,0,0,0
+606,CLASSICZICHAR,Stir Fried Shredded Pork in Fish Sauce,12,0,0,1
+607,CLASSICZICHAR,Stir Fried Beef in Black Pepper Sauce,18,0,0,0
+608,CLASSICZICHAR,Sliced Beef in Spicy Chilli Oil Soup,18,0,0,1
+609,CLASSICZICHAR,Stir Fried Beef with Kailan ,15,0,0,0
+610,CLASSICZICHAR,Braised Village Chicken in Hotpot,22,0,1,0
+611,CLASSICZICHAR,Stewed Chicken in Brown Sauce & Basil Leaves,18,0,0,0
+612,CLASSICZICHAR,Crispy Fried Chicken with Dried Chilli,15,0,0,1
+613,CLASSICZICHAR,Boiled Yangzhou Dry Bean Curd Slices,12,0,0,0
+614,CLASSICZICHAR,Fried EggPlant in Fish Sauce,12,0,0,0
+615,CLASSICZICHAR,Stir Fried Asparagus with Mushroom,16,0,0,0
+616,CLASSICZICHAR,Sauteed French Bean with Minced Meat,12,0,0,0
+702,VEGETABLE,Stir Fried Celery with Lily Bulb,12,1,0,0
+703,VEGETABLE,Stir Fried Broccoli,12,1,0,0
+704,VEGETABLE,Stir Fried Mixed Vegetables with Fungus,10,1,0,0
+705,VEGETABLE,Prawn with Chilli Sauce,10,1,0,0
+706,VEGETABLE,Fried Sambal Kang Kong,10,1,0,1
+801,EGGNTOFU,Braised Tofu with Crab Meat Sauce,16,0,0,0
+802,EGGNTOFU,Mapo Tofu ,12,0,0,1
+803,EGGNTOFU,Fried Egg with Tomatoes,8,0,0,0
+901,DESSERT,Chilled Aloe Vera with Osmanthus Honey,4,0,0,0
+902,DESSERT,Boiled Glutinous Rice Ball with Rice Wine,4,0,0,0
+903,DESSERT,Boiled White Fungus Soup with Red Dates,5,0,0,0
+904,DESSERT,Steamed & Deep-fried Mini Bun (6pcs),3,0,0,0
+905,DESSERT,Fried Spring Roll (8pcs),6,0,0,0
+1001,NOODLENRICE,Hand Made Chinese Fettuccini,14,0,0,0
+1002,NOODLENRICE,Yang Zhou Fried Rice,8,0,0,0
+1003,NOODLENRICE,Seafood Fried Rice,10,0,0,0
+1004,NOODLENRICE,Vegetable Fried Rice,8,0,0,0
+1005,NOODLENRICE,Shanghai Fried Noodle,8,0,0,0
+1006,NOODLENRICE,Plain Rice,1,0,0,0
+1101,HOTDRINK,Chinese Tea,1.5,0,0,0
+1102,HOTDRINK,Puer Tea,1.5,0,0,0
+1103,HOTDRINK,Chrysanthamum Tea,1.5,0,0,0
+1104,HOTDRINK,Green Tea,1.5,0,0,0
+1105,HOTDRINK,Jasmine Tea,1.5,0,0,0
+1201,COLDDRINK,Coke,2,0,0,0
+1202,COLDDRINK,Coke Light,2,0,0,0
+1203,COLDDRINK,Sprite,2,0,0,0
+1204,COLDDRINK,Iced Lemon Tea,2,0,0,0
+1205,COLDDRINK,Iced Green Tea,2,0,0,0
+1206,COLDDRINK,Iced Crysanthemum Tea,2,0,0,0
+1301,FRESHJUICE,Orange Juice,4,0,0,0
+1302,FRESHJUICE,Watermelon Juice,4,0,0,0
+1401,BEER,Tiger Beer (Large),10,0,0,0
+1402,BEER,Qing Dao Beer (Large),10,0,0,0
+1403,BEER,Red Wine Spirit Corkage,20,0,0,0
+1404,BEER,Wine Corkage,30,0,0,0
