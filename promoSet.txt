@@ -1,0 +1,11 @@
+2
+1
+2
+101,ADVANCEDORDER,Lobster Cooked In Two Styles,50,0,0,0
+201,APPETIZER,Marinated Jelly Fish with Lettuce,8,0,0,0
+15.00
+2
+2
+206,APPETIZER,Japanese Radish with Special Sauce,6,1,0,1
+402,FISH,Steamed Fish Head with Minced Chilli ,28,0,1,1
+30.00
