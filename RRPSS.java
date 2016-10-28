@@ -9,7 +9,8 @@ public class RRPSS {
 		Scanner sc = new Scanner (System.in);
 		Restaurant restaurant = new Restaurant();
 		int choice, choice2, choice3;
-		do {
+		do 
+		{
 			System.out.println("1: Create/Update/Remove menu item ");
 			System.out.println("2: Create/Update/Remove promotion");
 			System.out.println("3: Create Order");
@@ -23,85 +24,88 @@ public class RRPSS {
 			System.out.println("11: Quit");
 			
 			choice = sc.nextInt();
-			switch(choice){
-				case 1: {
+			switch(choice)
+			{
+				case 1: //add/update/remove menu item
+				{
 					System.out.println("1: Create menu item");
 					System.out.println("2: Update menu item");
 					System.out.println("3: Remove menu item");
 					System.out.println("4: Quit");
 					choice2=sc.nextInt();
-					switch(choice2){
-					case 1://add food
-                        System.out.print("ID:");
-                        int id = sc.nextInt();
-                        sc.nextLine(); // flush
-						System.out.print("Name:");
-						String name =sc.nextLine();
-						System.out.print("Price:");
-						double price=sc.nextDouble();
-						System.out.print("Category:");
-						restaurant.printCategories();
-						int category = sc.nextInt();
-						System.out.print("Description:");
-	                    String description = sc.nextLine();
-	                    restaurant.addFood(id, name, price, category);
-	                    break;
-					case 2://update food
-						System.out.print("Enter the food id");
-						id=sc.nextInt();
-						do{
-							System.out.println("1: Update name");
-							System.out.println("2: Update price");
-							System.out.println("3: Update description");
-							System.out.println("4: Quit");
-							choice3= sc.nextInt();
-							/***********************
-							 * System.out.println("New Value:");
-							 * String value = sc.nextLine();
-							 * restaurant.updateFood(id, choice3, value);
-							 */
-							switch(choice3){
-							case 1:
-								System.out.print("Enter food name:");
-								name=sc.nextLine();
-								restaurant.updateFood(id, 1, name);
-								break;
-							case 2:
-								System.out.print("Enter food price:");
-								price=sc.nextDouble();
-								restaurant.updateFood(id, price);
-								break;
-							case 3:
-								System.out.print("Enter food description:");
-								description=sc.nextLine();
-								restaurant.updateFood(id, 3, description);
-								break;
-							case 4:
-								break;			
-							
-							}
-						}while(choice3>0 &&choice3<4);
-						break;
-					case 3://remove food
-						System.out.print("Enter the food id:");
-						id=sc.nextInt();
-						restaurant.removeFood(id);
-						break;
-					case 4:
-						break;
+					
+					switch(choice2)
+					{
+						case 1://add food
+						{
+	                        System.out.print("ID:");
+	                        int id = sc.nextInt();
+	                        sc.nextLine(); // flush
+							System.out.print("Name:");
+							String name =sc.nextLine();
+							System.out.print("Price:");
+							double price=sc.nextDouble();
+							System.out.print("Category:");
+							restaurant.printCategories();
+							int category = sc.nextInt();
+							System.out.print("Description:");
+		                    String description = sc.nextLine();
+		                    restaurant.addFood(id, name, price, category);
+		                    break;
+						}
+						case 2://update food
+						{
+							System.out.print("Enter the food id");
+							int id=sc.nextInt();
+							do
+							{
+								System.out.println("1: Update name");
+								System.out.println("2: Update price");
+								System.out.println("3: Update description");
+								System.out.println("4: Quit");
+								choice3= sc.nextInt();
+								sc.nextLine(); // flush
+								if (choice3>0 && choice3<4)
+								{
+									System.out.println("New Value:");
+									String value = sc.nextLine();
+									restaurant.updateFood(id, choice3, value);
+								}
+							}while(choice3>0 &&choice3<4);
+							break;
+						}
+						case 3://remove food
+						{
+							System.out.print("Enter the food id:");
+							int id=sc.nextInt();
+							restaurant.removeFood(id);
+							break;
+						}
+						case 4: //quit
+						{
+							break;
+						}
+						default:
+						{
+							System.out.println("Wrong data input");
+							break;
+						}
 					}
-				}while(choice2>0&&choice2<4);
-				break;
+					break;
+				}
+				
 				
 				case 2://add/update/remove promoset
-					do{
-						System.out.println("1: Create promotion");
-						System.out.println("2: Update promotion");
-						System.out.println("3: Remove promotion");
-						System.out.println("4: Quit");
-						choice2 = sc.nextInt();
-						switch(choice2){
+				{
+					System.out.println("1: Create promotion");
+					System.out.println("2: Update promotion");
+					System.out.println("3: Remove promotion");
+					System.out.println("4: Quit");
+					choice2 = sc.nextInt();
+					switch(choice2)
+					{
 						case 1://add promoset
+						{
 							System.out.println("ID:");
 							int id = sc.nextInt();
 							System.out.print("Name:");
@@ -114,49 +118,50 @@ public class RRPSS {
 							String description =sc.nextLine();
 							restaurant.addPromoSet(id, name, foodListStr, price, description);
 							break;
+						}
 						case 2://update promoset//
+						{
 							System.out.print("Enter the promotion id:");
-							id=sc.nextInt();
-							do{
+							int id=sc.nextInt();
+							do
+							{
 								System.out.println("1: Update name");
 								System.out.println("2: Update price");
 								System.out.println("3: Update description");
 								System.out.println("4: Quit");
 								choice3= sc.nextInt();
-								switch(choice3){
-								case 1:
-									System.out.print("Enter promotion name:");
-									name = sc.nextLine();
-									restaurant.updatePromoSet(id, 1, name);
-									break;
-								case 2:
-									System.out.print("Enter promotion price:");
-									price =sc.nextDouble();
-									restaurant.updatePromoSet(id, price);
-									break;
-								case 3:
-									System.out.print("Enter promotion description:");
-									description=sc.nextLine();
-									restaurant.updatePromoSet(id, 3, description);
-									break;
-								case 4:
-									break;
-						
+								if (choice3>0 && choice3<4)
+								{
+									System.out.println("New value");
+									String value = sc.nextLine();
+									restaurant.updatePromoSet(id, choice3, value);
 								}
 							}while(choice3>0 && choice3<4);
 							break;
+						}
+						
 						case 3://remove promoSet
+						{
 							System.out.print("Enter the promotion id:");
-							id=sc.nextInt();
+							int id=sc.nextInt();
 							restaurant.removePromoSet(id);
 							break;
-						case 4:
+						}
+						case 4: // quit
+						{
 							break;
 						}
-					}while(choice2>0 && choice2<4);
+						default:
+						{	
+							System.out.println("wrong input");
+							break;
+						}
+					}		
 					break;
+				}
 				
-				case 7: {
+				case 7: 
+				{
 					System.out.println("pax:");
 					int pax = sc.nextInt();
 					Table table = restaurant.getTable(pax);
@@ -167,8 +172,9 @@ public class RRPSS {
 					String promoSet = sc.nextLine();
 					restaurant.addOrder(food, promoSet, table);
 					break;
-					}
-				case 11: {
+				}
+				case 11: 
+				{
 					System.out.println("Date:");
 					String date = sc.next();
 					System.out.println("Time:");
@@ -183,8 +189,12 @@ public class RRPSS {
 					String hp = sc.next();
 					restaurant.reserveTable(date, time, tableID, name, hp, pax);
 				}
-				default:{System.out.println("ERROR");}
+				default:{
+					{System.out.println("ERROR");}
+					break;
+				}
 			}
-		}while (choice != 17);
+			
+		}while (choice != 11);
 	}
 }
